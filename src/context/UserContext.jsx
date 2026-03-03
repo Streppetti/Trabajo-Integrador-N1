@@ -1,28 +1,28 @@
 import { createContext, useState, useContext } from 'react';
 
-    const UserContext = createContext();
+const UserContext = createContext();
 
-    export const UserProvider = ({ children }) => {
-    
+export const UserProvider = ({ children }) => {
+
     const [jugador, setJugador] = useState({
         nombre: "",
-        oro: 1000,       
+        oro: 5000,
         inventario: []
     });
 
     const procesarCompra = (itemElegido) => {
         if (jugador.oro >= itemElegido.precio) {
-        
-        setJugador((prevJugador) => ({
-            ...prevJugador,
-            oro: prevJugador.oro - itemElegido.precio,
-            inventario: [...prevJugador.inventario, itemElegido]
-        }));
-        
-        return true;
+
+            setJugador((prevJugador) => ({
+                ...prevJugador,
+                oro: prevJugador.oro - itemElegido.precio,
+                inventario: [...prevJugador.inventario, itemElegido]
+            }));
+
+            return true;
 
         } else {
-        return false;
+            return false;
         }
     };
 
@@ -32,9 +32,9 @@ import { createContext, useState, useContext } from 'react';
 
     return (
         <UserContext.Provider value={{ jugador, procesarCompra, definirNombre }}>
-        {children}
+            {children}
         </UserContext.Provider>
     );
-    };
+};
 
 export const useUser = () => useContext(UserContext);

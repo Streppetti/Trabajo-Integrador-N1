@@ -12,7 +12,7 @@ const Inventario = () => {
         <div className="inventario-bg">
             <div className="inventario-card">
                 <div className="inventario-header">
-                    <h2>🎒 MOCHILA</h2>
+                    <h2> MOCHILA 🎒 </h2>
                     <button onClick={() => navigate(-1)}>[ VOLVER ]</button>
                 </div>
 

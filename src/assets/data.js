@@ -120,7 +120,8 @@ export const vendedores = [
         catalogo: [
         { id: 1, nombre: "Licencia de WinRAR", precio: 500 },
         { id: 2, nombre: "Poción de Seniority", precio: 1000 },
-        { id: 3, nombre: "Pergamino Antiguo", precio: 9999 }
+        { id: 3, nombre: "Las Empanadas.dev", precio: 5000 },
+        { id: 4, nombre: "Pergamino Antiguo", precio: 9999 }
         ]
     }
 ];
