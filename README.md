@@ -25,22 +25,6 @@ La consigna era desarrollar un clon de WhatsApp, pero lo pense de otra manera.
 - Context API — estado global del jugador
 - CSS - con estética pixel art
 
--- ESTRUCTURA DEL PROYECTO --
-src/
-├── assets/
-│   ├── components/
-│   │   ├── ChatBox.jsx
-│   │   └── Sidebar.jsx
-│   ├── pages/
-│   │   ├── Login.jsx
-│   │   ├── ChatDashboard.jsx
-│   │   └── Inventario.jsx
-│   ├── media/        # imágenes de avatares e items
-│   └── data.js       # vendedores, catálogos y diálogos
-├── context/
-│   └── UserContext.jsx
-├── App.jsx
-└── main.jsx
 
 ## Deploy
 
